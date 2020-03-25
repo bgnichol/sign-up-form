@@ -1,0 +1,142 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap")
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("images/bg-intro-desktop.png");
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 70px;
+    min-height: 100vh;
+}
+
+.left, .right{
+    flex: 1;
+    padding: 0 20px;
+}
+
+
+
+h1{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+p{
+    opacity: 0.8;
+    font-size: 15px;
+    line-height: 20px;
+
+}
+
+.box, .box-blue {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.box-blue{
+    margin-bottom: 20px;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+
+}
+
+.form-control{
+    margin-bottom: 20px;
+}
+
+
+
+input{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    width: 90%;
+    padding: 15px 15px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:active{
+    border: 2px solid hsl(248, 32%, 49%);
+}
+
+button{
+    background-color: hsl(154, 59%, 51%);
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    padding: 15px 25px;
+    border: 1px solid hsl(154, 59%, 40%);
+    border-radius: 5px;
+    box-shadow: 0 6px rgba(2, 39, 1, 0.4);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.5s ease;
+}
+ 
+button:focus{
+    outline: none;
+}
+
+button:active{
+    border-bottom-width: 1px;
+    transform: translateY(2px);
+}
+
+small{
+    display: block;
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+.clicking{
+    display: block;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 20px;
+    
+} 
+
+small > a{
+    color: hsl(0, 100%, 74%) ;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+    .left{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .right{
+        margin-left: -35px;
+    }
+}
